@@ -1,0 +1,12 @@
+{% extends 'bootstrap/base.html' %}
+
+{% import 'bootstrap/wtf.html' as wtf %}
+
+
+{% block title%} add form {%endblock%}
+
+{%block content%}
+
+{{ wtf.quick_form(form, button_map={'submit': 'primary'}, novalidate=True) }}
+
+{%endblock%}
